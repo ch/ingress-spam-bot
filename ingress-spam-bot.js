@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name       Ingress Spam Bot
+// @author       Pavel Titkov
 // @namespace  http://titkov.org/
 // @version    0.1
 // @description  Spam to Comm
