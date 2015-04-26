@@ -2,7 +2,9 @@
 // @name       Ingress Spam Bot
 // @author       Pavel Titkov
 // @namespace  http://titkov.org/
-// @version    0.2
+// @version    0.3
+// @updateURL https://raw.githubusercontent.com/ch/ingress-spam-bot/master/ingress-spam-bot.js
+// @downloadURL https://raw.githubusercontent.com/ch/ingress-spam-bot/master/ingress-spam-bot.js
 // @description  Spam to Comm
 // @match      https://www.ingress.com/intel*
 // @copyright  2015, titkov.org
@@ -16,6 +18,7 @@ var sendFac=0;
 var mAll='';
 var mFac='';
 var city='';
+var timeout=5000;
 
 function startSearch() {
     localStorage.setItem('spamCities',$('#spamCities').val());
@@ -87,7 +90,7 @@ function sending() {
 
 
         }
-        setTimeout(sending, 15000);
+        setTimeout(sending, timeout);
     } else {
         startSearch();
     }
